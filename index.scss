@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  animation: fade-in 500ms ease-in-out;
+}
+
+body {
+  background-color: #d7e2e8;
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 8vh;
+
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-cloud {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .header__logo {
+    font-family: 'Parisienne', cursive;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .darkmode {
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 92vh;
+
+  .time {
+    color: rgb(18, 191, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid white;
+    width: 250px;
+    height: 250px;
+  }
+
+  .appDesc {
+    margin-bottom: 50px;
+  }
+
+  .timeMeditated {
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+
+  button {
+    border: 1px solid white;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: grey;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 300ms;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: rgb(18, 191, 214) 4px 3px;
+    }
+  }
+}
+
+.blackBackground {
+  background-color: black;
+  color: white;
+  animation: flash-in 500ms ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    background-color: black;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

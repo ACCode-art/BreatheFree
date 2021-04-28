@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  -webkit-animation: fade-in 500ms ease-in-out;
+          animation: fade-in 500ms ease-in-out;
+}
+
+body {
+  background-color: #d7e2e8;
+  color: black;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  height: 8vh;
+}
+
+.header .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .fa-cloud {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header .header__logo {
+  font-family: 'Parisienne', cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header .darkmode {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 92vh;
+}
+
+.main .time {
+  color: #12bfd6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+}
+
+.main .appDesc {
+  margin-bottom: 50px;
+}
+
+.main .timeMeditated {
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.main button {
+  border: 1px solid white;
+  height: 50px;
+  width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: grey;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.main button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: #12bfd6 4px 3px;
+          box-shadow: #12bfd6 4px 3px;
+}
+
+.blackBackground {
+  background-color: black;
+  color: white;
+  -webkit-animation: flash-in 500ms ease-in-out;
+          animation: flash-in 500ms ease-in-out;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    background-color: black;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    background-color: black;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
