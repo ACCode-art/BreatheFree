@@ -9,8 +9,8 @@
 }
 
 body {
-  background-color: #d7e2e8;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .header {
@@ -45,11 +45,6 @@ body {
   font-family: 'Parisienne', cursive;
   font-size: 25px;
   font-weight: bold;
-}
-
-.header .darkmode {
-  cursor: pointer;
-  font-size: 30px;
 }
 
 .main {
@@ -87,13 +82,60 @@ body {
   height: 250px;
 }
 
-.main .appDesc {
-  margin-bottom: 50px;
+.main .timeMeditated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  border: 1px solid #616161;
+  width: 230px;
+  height: 50px;
+  color: #616161;
 }
 
-.main .timeMeditated {
-  font-style: italic;
-  margin-bottom: 50px;
+.main .meditatedTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #616161;
+  width: 230px;
+  height: 50px;
+  color: #616161;
+}
+
+.main .startStop {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .startStop .start {
+  border: 1px solid green;
+}
+
+.main .startStop .stop {
+  border: 1px solid maroon;
 }
 
 .main button {
@@ -113,13 +155,6 @@ body {
           transform: translateY(-5px);
   -webkit-box-shadow: #12bfd6 4px 3px;
           box-shadow: #12bfd6 4px 3px;
-}
-
-.blackBackground {
-  background-color: black;
-  color: white;
-  -webkit-animation: flash-in 500ms ease-in-out;
-          animation: flash-in 500ms ease-in-out;
 }
 
 @-webkit-keyframes fade-in {
