@@ -33,16 +33,19 @@ function secondsToHms() {
 start = () => {
   if (count === 1 || count === 13) {
     toneAudio.src = './sounds/first-bell.wav';
+    toneAudio.muted = false;
     toneAudio.play();
   }
 
   if (count === 5) {
     toneAudio.src = './sounds/second-bell.wav';
+    toneAudio.muted = false;
     toneAudio.play();
   }
 
   if (count === 9) {
     toneAudio.src = './sounds/third-bell.wav';
+    toneAudio.muted = false;
     toneAudio.play();
   }
 
