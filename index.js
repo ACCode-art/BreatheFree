@@ -6,9 +6,7 @@ const meditatedTime = document.querySelector('.meditatedTime');
 
 const body = document.querySelector('body');
 
-const firstBell = new Audio('./sounds/first-bell.wav');
-const secondBell = new Audio('./sounds/second-bell.wav');
-const thirdBell = new Audio('./sounds/third-bell.wav');
+const toneAudio = new Audio();
 
 action = (act) => {
   time.textContent = `${act}: ${count}`;
@@ -34,15 +32,18 @@ function secondsToHms() {
 
 start = () => {
   if (count === 1 || count === 13) {
-    firstBell.play();
+    toneAudio.src = './sounds/first-bell.wav';
+    toneAudio.play();
   }
 
   if (count === 5) {
-    secondBell.play();
+    toneAudio.src = './sounds/second-bell.wav';
+    toneAudio.play();
   }
 
   if (count === 9) {
-    thirdBell.play();
+    toneAudio.src = './sounds/third-bell.wav';
+    toneAudio.play();
   }
 
   if (count < 5) {
